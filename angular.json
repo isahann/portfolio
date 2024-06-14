@@ -108,7 +108,6 @@
             "message": "Deploying from angular-cli-ghpages",
             "branch": "gh-pages",
             "baseHref": "https://isahann.github.io",
-            "repo": "https://github.com/isahann/isahann.github.io.git",
             "name": "Isahann Hanacleto",
             "email": "isahanacleto@gmail.com"
           }

@@ -1,8 +1,13 @@
 <div class="window">
   <app-window-title-bar [title]="this.windowTitleBar" iconPath="contact.png"></app-window-title-bar>
   <div class="window-body">
-    <app-icon-button title="Gmail" iconPath="gmail.png" (onButtonClick)="this.redirect(0)"></app-icon-button>
-    <app-icon-button title="LinkedIn" iconPath="linkedin.png" (onButtonClick)="this.redirect(1)"></app-icon-button>
-    <app-icon-button title="GitHub" iconPath="github.png" (onButtonClick)="this.redirect(2)"></app-icon-button>
+    <p><label>Feel free to contact me at any time!</label></p>
+    <fieldset>
+      <legend>☎️ Contacts</legend>
+      <app-icon-button title="Gmail" iconPath="gmail.png" (onButtonClick)="this.redirect(0)"></app-icon-button>
+      <app-icon-button title="LinkedIn" iconPath="linkedin.png" (onButtonClick)="this.redirect(1)"></app-icon-button>
+      <app-icon-button title="GitHub" iconPath="github.png" (onButtonClick)="this.redirect(2)"></app-icon-button>
+    </fieldset>
+    <app-icon-button class="home" title="Home" iconPath="home.png" routerLink=""></app-icon-button>
   </div>
 </div>

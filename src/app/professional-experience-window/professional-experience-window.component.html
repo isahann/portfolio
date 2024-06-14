@@ -11,7 +11,7 @@
             [attr.aria-selected]="tab.selected"
             (click)="this.changeSelectedTab(tab)"
           >
-            {{tab.title}}
+            {{ tab.title }}
           </button>
         </ng-container>
       </menu>
@@ -28,29 +28,29 @@
               <li>
                 🏢&nbsp;<b>Company</b>
                 <ul>
-                  <li>{{professionalTab.companyName}}</li>
+                  <li>{{ professionalTab.companyName }}</li>
                 </ul>
               </li>
               <li>
                 🌎&nbsp;<b>Location/Work type(s)</b>
                 <ul>
-                  <li>{{professionalTab.location}}</li>
+                  <li>{{ professionalTab.location }}</li>
                   <ng-container *ngFor="let workType of professionalTab.workTypes">
-                    <li>{{workType}}</li>
+                    <li>{{ workType }}</li>
                   </ng-container>
                 </ul>
               </li>
               <li>
                 🕓&nbsp;<b>Duration</b>
                 <ul>
-                  <li>{{professionalTab.duration}}</li>
+                  <li>{{ professionalTab.duration }}</li>
                 </ul>
               </li>
               <li>
                 🧑‍💻&nbsp;<b>Roles</b>
                 <ul>
                   <ng-container *ngFor="let role of professionalTab.roles">
-                    <li>{{role}}</li>
+                    <li>{{ role }}</li>
                   </ng-container>
                 </ul>
               </li>
@@ -59,16 +59,24 @@
                   <summary>🛠&nbsp;<b>Skills</b></summary>
                   <ul>
                     <ng-container *ngFor="let skill of professionalTab.skills">
-                      <li>{{skill}}</li>
+                      <li>{{ skill }}</li>
                     </ng-container>
                   </ul>
                 </details>
               </li>
             </ul>
           </fieldset>
-          <label>💬 {{professionalTab.description}} 💬</label>
+          <div class="description">
+            <ng-container *ngFor="let description of professionalTab.descriptions">
+              <p><label> {{ description }} </label></p>
+            </ng-container>
+          </div>
         </article>
       </ng-container>
     </section>
+
+    <div class="home">
+      <app-icon-button iconPath="home.png" title="Home" routerLink=""></app-icon-button>
+    </div>
   </div>
 </div>

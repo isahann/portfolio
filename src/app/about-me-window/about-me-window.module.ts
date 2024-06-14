@@ -6,15 +6,17 @@ import {WhatDoIDoComponent} from './what-do-i-do/what-do-i-do.component';
 import {WhatDoIKnowComponent} from './what-do-i-know/what-do-i-know.component';
 import {DragDropModule} from "@angular/cdk/drag-drop";
 import {CommonComponentsModule} from "../common/common-components.module";
+import {RouterLink} from "@angular/router";
 
 @NgModule({
   declarations: [AboutMeWindowComponent, WhoAmIComponent, WhatDoIDoComponent, WhatDoIKnowComponent],
-  imports: [
-    DragDropModule,
-    NgOptimizedImage,
-    CommonComponentsModule,
-    CommonModule
-  ],
+    imports: [
+        DragDropModule,
+        NgOptimizedImage,
+        CommonComponentsModule,
+        CommonModule,
+        RouterLink
+    ],
   exports: [AboutMeWindowComponent]
 })
 export class AboutMeWindowModule {

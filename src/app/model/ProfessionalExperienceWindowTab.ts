@@ -7,5 +7,5 @@ export interface ProfessionalExperienceWindowTab extends WindowTab{
   duration: string,
   roles: string[],
   skills: string[],
-  description: string,
+  descriptions: string[],
 }

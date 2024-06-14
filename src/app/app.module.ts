@@ -9,10 +9,13 @@ import {
 import {EducationWindowModule} from "./education-window/education-window.module";
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {ContactWindowModule} from "./contact-window/contact-window.module";
+import { HomeWindowComponent } from './home-window/home-window.component';
+import {CommonComponentsModule} from "./common/common-components.module";
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeWindowComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,6 +25,7 @@ import {ContactWindowModule} from "./contact-window/contact-window.module";
     EducationWindowModule,
     ContactWindowModule,
     NoopAnimationsModule,
+    CommonComponentsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

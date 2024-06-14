@@ -22,7 +22,11 @@ export class ProfessionalExperienceWindowComponent implements OnInit {
       skills: ['Java', 'PostgreSQL', 'Git', 'Apache Maven', 'JavaScript', 'Redmine', 'JSP', 'CSS', 'HTML', 'Hibernate'],
       duration: 'jul/2016 - dec/2016',
       roles: ['Intern'],
-      description: 'Considering this was a internship (and also my first professional experience), it was more focused on learning how to work on a tech company than doing any actual work. I\'ve explored a bit of some parts, like development, testing, and doing some analysis, on the company\'s agricultural systems.'
+      descriptions: [
+        'At Wealth Systems (acquired by TOTVS in 2020), I had my first experience on the field. It helped me learn the overall basics of a day in the life of a software developer.',
+        'The time was spent on daily activities to learn more about software development itself. We simulated task development, bug fixing, and so on.' +
+        'We used Java for the backend, along with PostgreSQL, and JSP on the frontend.'
+      ]
     },
     {
       id: 'tab-syngular',
@@ -34,7 +38,11 @@ export class ProfessionalExperienceWindowComponent implements OnInit {
       skills: ['Java', 'PostgreSQL', 'Git', 'Apache Maven', 'Apache Tomcat', 'Primefaces', 'Jasper Reports', 'CSS', 'HTML', 'Hibernate', 'Jenkins', 'JSF'],
       duration: 'aug/2017 - dec/2018 and jun/2019 - jul/2019',
       roles: ['Intern (2017-2018)', 'Freelancer (2019)'],
-      description: 'Internship followed by a brief time as a freelancer, focused on development, but with some performances on testing and giving customer support. Primary performance was in an ERP system, with registrations, issuance of invoices and NFC-e, creation of a module for issuing banking slips along with shipping and return files, sales/inventory management, cash flow, among others. I also had a brief role refactoring an agricultural system for managing crops and seeds.'
+      descriptions: [
+        'At Syngular Systems I\'ve had a great learning experience despite being only a internship. It really helped me develop techincal skills and improved my knowledge on the overall software development cycle.',
+        'I\'ve worked on agricultural systems, that managed crops and seeds, and the main experience was on an ERP, with registrations, issuance of invoices, issuance of bank slips along with their specific shipping and returnal files.',
+        'The tech stack was a JSF project, using Java on the backend along with PostgreSQL as a database. On the front-end, we used PrimeFaces to help the component development, which increased our productivity. Jenkins was our CI/CD choice, which helped me learn a bit about DevOps concepts.'
+      ]
     },
     {
       id: 'tab-matera',
@@ -43,10 +51,14 @@ export class ProfessionalExperienceWindowComponent implements OnInit {
       companyName: 'Matera',
       location: 'Maringá - PR, Brazil',
       workTypes: ['On-site (jan/2020 - mar/2020)', 'Remote (mar/2020 - feb/2022)'],
-      skills: [],
+      skills: ['Java', 'PostgreSQL', 'Git', 'Apache Maven', 'Apache Tomcat', 'Jenkins', 'Spring Framework', 'AngularJS', 'Bash'],
       duration: 'jan/2020 - mar/2022',
       roles: ['Junior Software Developer (2020-2021)', 'Mid-level Software Developer (2022)'],
-      description: 'Mainly system development, but brief performances on technical analysis and testing. First performance was with an Internet Banking system, primarily fixing bugs in the back-end with Spring and PL/SQL. Second role was in the development, technical analysis and assistance in testing the Brazilian Payment System (SPB), managing the flow of message transmissions between FIs and the BC (Brazil\'s central bank), the cashier pilot screen, which verifies current transactions in the system, and between other modules of the same.'
+      descriptions: [
+        'Matera was my first experience being a Junior Software Engineer. It helped me build a lot of soft skills, enhance my knowledge of the overall day of a software engineer, and eventually I got promoted from Junior to Mid-Level (around 2021).',
+        'My work on Matera was hardly focused on banking solutions for financial institutions such as banks and fintechs for the brazilian banking system. My main experience was at SPB (Brazilian Paying System), which taught me a lot about the overall architecture of financial systems, how messages were handled to perform payments, transfers and such, and also for handling judicial decisions for blocking accounts or transfers, for example.',
+        'I\'ve solidified a lot of my skills for the back-end part, used mainly Java with Spring, used databases such as PostgreSQL, Oracle DB, MSSQL, and worked a bit on the front-end using JSP. We used Jenkins with AWS for our CI/CD and cloud environment, and I also built a few scripts for Jenkins\' pipelines. It also helped me improve my sense of resposibilty of tasks, self-confidence, and team communication, for soft skills.'
+      ]
     },
     {
       id: 'tab-cit',
@@ -58,7 +70,11 @@ export class ProfessionalExperienceWindowComponent implements OnInit {
       skills: ['Java', 'Spring Framework', 'TypeScript', 'Git', 'Apache Maven', 'JavaScript', 'REST APIs', 'Node.js', 'Azure DevOps', 'MongoDB', 'Ionic', 'NoSQL', 'Mockito', 'Angular', 'Docker/Docker compose', 'CSS', 'Jira', 'Hibernate', 'JUnit', 'Jest/Karma', 'Kafka', 'Bash', 'OpenAPI specification'],
       duration: 'since mar/2022',
       roles: ['Mid-level Software Developer'],
-      description: 'Experience focused on development, with brief aid on testing. First role was in a project where I helped to develop a microservice using Spring, exposing data via REST API, searching from a database in MongoDB. The project is part of the initial APIs for the Open Insurance project in Brazil. Second role was working on a bank\'s insurance management application, where I helped develop the front-end in Angular/Ionic, using TypeScript, Ngrx, testing on Android and iOS. Third role was working again in a microsevice, exposing data from a MongoDB database via REST API, but now using Kafka brokers to send and consume messages.'
+      descriptions: [
+        'At CI&T, I had a great opportunity to solidify my skills as a back-end developer and also had a few shots working with websites and mobile apps, which helped me develop a lot of front-end skills.',
+        'I\'ve worked on several projects, mainly focused on the insurance section of financial companies, to improve user experience when buying an insurance and also offering various options on other banks through Open Finance. ',
+        'I\'ve used mainly Java with Spring on the back-end of microservices applications, used several databases such as PostgreSQL or MongoDB, got to know a bit more about messaging using Kafka, and exposed data via REST APIs. But, I also worked on a mobile app using Angular/Ionic and a website using Angular, which helped me a lot to understand some complex concepts on the front-end side, such as making use of NgRx to manage state and reactive extensions using RxJs. On almost all projects we used AWS for the cloud environment, along with Jenkins or Azure pipelines for the CI/CD.'
+      ]
     },
   ];
 
